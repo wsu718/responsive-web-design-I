@@ -1,3 +1,276 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+}
+
+.page {
+    width: 85%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+}
+
+nav {
+    display: flex;
+   
+    margin-top: 5%;
+}
+
+.navlinks {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(184, 186, 190);
+    font-size: 0.875rem;
+}
+
+/* CTA */
+
+button {
+	border: black 1px solid;
+    font-size: .875rem;
+    margin-top: 9%;
+    padding: 2% 15%;
+    background-color: white;
+
+}
+
+.cta {
+    display: flex;
+    padding: 10% 0px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.cta img {
+    margin-left: 12%;
+}
+
+.cta h1 {
+	font-size: 5rem;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.innovation {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+/* Main text */
+
+.body {
+    border-top: 2px black solid;
+    width: 92%;
+    margin: 0 auto;
+}
+.main-text {
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-between;
+}
+
+
+
+.image {
+	display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text-area {
+    width: 50%;
+}
+    
+.text-area2 {
+    width: 33%;
+}
+
+.text-area p {
+    margin-top: 3%;
+}
+
+.text-area2 p {
+    margin-top: 6%;
+}
+
+.second-text-area {
+    border-bottom: 2px solid black;
+    padding-bottom: 4%;
+}
+
+/* Footer */
+.contact-info {
+    margin: 0 4%;
+}
+address p {
+	margin-bottom: 1%;
+}
+
+address {
+    margin-top: 2%;
+}
+.contact-info h3 {
+    margin-top: 2%;
+}
+
+.phone {
+	margin: 1% 0;
+}
+
+address a {
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+	margin-top: 6%;
+    text-align: center;
+} 
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .page {
+        width: 95%;
+    }
+
+    .ctaimg {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .navlinks {
+        flex-direction: column;
+    }
+
+    .page {
+        width: 100%;
+        }
+
+    nav .navlinks a {
+        border-bottom: 1px #939393 solid;
+        padding: 3.5% 0;
+        width: 100%;
+        text-align: center;
+        }
+
+    .first-nav {
+            border-top: 1px #939393 solid;
+        }
+
+    .logo {
+        margin-bottom: 1.5%;
+    }
+
+    .main-text {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-area, .text-area2 {
+        width: 95%;
+        margin-top: 7%;
+    }
+
+    .text-area p, .text-area2 p {
+        margin-top: 3%;
+    }
+
+    .text-area {
+        margin-bottom: 8%;
+    }
+
+    .text-area2 {
+        margin-bottom: 8%;
+    }
+
+    .last-text {
+        margin-bottom: 4%;
+    }
+
+    .phone {
+        margin: 3% 0;
+    }
+}
 
